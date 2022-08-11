@@ -14,7 +14,7 @@ This code requires the following:
 
 * python 3
 * PyTorch 1.0+
-
+* tensorboardX
 
 Data
 ----
@@ -36,7 +36,10 @@ There are a number of ways the repository can be extended:
 Citation
 --------
 
-If you use this code for your research, please cite our `paper <https://arxiv.org/abs/1805.09921>`_:
+If you use this code for your research, please cite our `paper <https://openreview.net/forum?id=lyLVzukXi08>`_:
 ::
 
-  @inproceedings{}
+  @inproceedings{
+
+    
+  }
