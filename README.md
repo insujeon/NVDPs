@@ -1,7 +1,7 @@
 Neural Variational Dropout Processes
 ====================================
 
-This repository implements the models and algorithms necessary to reproduce the experiments presented in the conference paper `Neural Variational Dropout Processes, Jeon, et al.` ICLR, 2022. <https://openreview.net/forum?id=lyLVzukXi08>
+This repository implements the models and algorithms necessary to reproduce the experiments presented in the conference paper `Neural Variational Dropout Processes, Jeon et al.,` ICLR, 2022. <https://openreview.net/forum?id=lyLVzukXi08>
 
 It includes code for running few-shot regression experiments with Gaussian Process with the random kernel (learned variance) as well as for reproducing the 2d image inpainting (MNIST, CelebA, and Omniglot) experiments.
 
@@ -34,7 +34,7 @@ Please see `main_2d.py` and `./data/data_independent.py` for more specific data 
 Usage
 -----
 
-* To run the demo experiment, follows the instructions in ``NVDP_demo_TrigData.ipynb``.
+* To run the demo experiment, follow the instructions in ``NVDP_demo_TrigData.ipynb``.
 * To run the few-shot regression with the Gaussian Process experiment, type the following command on the Linux console: ``python main_gp.py``.
 * To run the 2d image inpainting experiment, type the following command on the Linux console: ``python main_2d.py``.
 
