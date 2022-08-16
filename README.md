@@ -27,7 +27,7 @@ Data
 ----
 For Gaussian Process and Trigonometry and dataset, they are implemented and included as library files.
 For MNIST dataset, the data can be downloaded automatically by the torchvision library.
-For CelebA, and Omniglot dataset, the data can be downloaded from <here>. 
+For CelebA, and Omniglot dataset, the data can be downloaded from <https://tinyurl.com/yjpyxj59>. 
 Please download the data file, unzip and locate it in the `./data` folder. 
 
 Usage
