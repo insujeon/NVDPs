@@ -1,12 +1,19 @@
 Neural Variational Dropout Processes
 ====================================
 
-This repository implements the models and algorithms necessary to reproduce the experiments carried out in the paper
-`Neural Variational Dropout Processes, Jeon et al. <https://openreview.net/forum?id=lyLVzukXi08> `
+This repository implements the models and algorithms necessary to reproduce the experiments exhibited in the paper `Neural Variational Dropout Processes, Jeon, et al.` ICLR, 2022. <https://openreview.net/forum?id=lyLVzukXi08>
 
-It includes code for running few-shot regression experiments with Gaussian Process with random kernel (learned variance), as well as for reproducing the 2d image inpainting (MNIST, CelebA, and Omniglot) experiments.
+It includes code for running few-shot regression experiments with Gaussian Process with the random kernel (learned variance), as well as for reproducing the 2d image inpainting (MNIST, CelebA, and Omniglot) experiments.
 
-The main components of the repository are:
+The major component of this repository is as follows:
+
+* ``demo``: a folder containing a simple demo experiment on learning trigonometry dataset.
+  - ``NVDP_demo_TrigData.ipynb``: script to run demo experiment (ipynb file).
+* ``gp``: a folder containing the few-shot regression experiment on Gaussian Process with the random kernel (learned variance).
+  - ``main_gp.py``: script to run few-shot GP regression experiment.
+* ``2d``: a folder containing the few-shot image inpainting (MNIST, CelebA, and Omniglot) experiments.
+  - ``main_2d.py``: script to run few-shot image inpainting experiment.
+
 
 Dependencies
 ------------
@@ -18,28 +25,41 @@ This code requires the following:
 
 Data
 ----
+For Gaussian Process and Trigonometry and dataset, they are implemented and included as library files.
+For MNIST dataset, the data can be downloaded automatically by the torchvision library.
+For CelebA, and Omniglot dataset, the data can be downloaded from <here>. 
+Please download the data file, unzip and locate it in the `./data` folder. 
 
 Usage
 -----
+
+* To run the demo experiment, follows the instructions in ``NVDP_demo_TrigData.ipynb``.
+* To run the few-shot regression with the Gaussian Process experiment, type the following command on the Linux console: ``python main_gp.py``.
+* To run the 2d image inpainting experiment, type the following command on the Linux console: ``python main_gp.py``.
+
+See more optional parameter settings (e.g., changing dataset, models) in each main python file.
+
+This script also includes the implementation of (Conditional) Neural processes <https://github.com/deepmind/neural-processes> as baselines.
+
+To see the results of each experiment, enter into the folder ``./runs/[dataset_name]/[experiment_name]/events/``
+and execute tensorboard with the following command: `tensorboard --logdir=./ --port=8888 --samples_per_plugin image=100 --reload_multifile=True --reload_interval 30 --host=0.0.0.0`
 
 
 Contact
 -------
 To ask questions or report issues, please open an issue on the issues tracker.
 
-Extending the Model
--------------------
-
-There are a number of ways the repository can be extended:
-
 
 Citation
 --------
 
-If you use this code for your research, please cite our `paper <https://openreview.net/forum?id=lyLVzukXi08>`_:
+If you use this code for your research, please cite our paper <https://openreview.net/forum?id=lyLVzukXi08>:
 ::
 
-  @inproceedings{
-
-    
+  @inproceedings{jeon2022neural,
+    title={Neural variational dropout processes},
+    author={Jeon, Insu and Park, Youngjin and Kim, Gunhee},
+    booktitle={International Conference on Learning Representations},
+    year={2022}
   }
+ 
