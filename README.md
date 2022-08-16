@@ -36,7 +36,7 @@ Usage
 
 * To run the demo experiment, follows the instructions in ``NVDP_demo_TrigData.ipynb``.
 * To run the few-shot regression with the Gaussian Process experiment, type the following command on the Linux console: ``python main_gp.py``.
-* To run the 2d image inpainting experiment, type the following command on the Linux console: ``python main_gp.py``.
+* To run the 2d image inpainting experiment, type the following command on the Linux console: ``python main_2d.py``.
 
 See more optional parameter settings (e.g., changing dataset, models) in each main python file.
 This script also includes the implementation of (Conditional) Neural processes <https://github.com/deepmind/neural-processes> as baselines.
