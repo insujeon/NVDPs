@@ -39,7 +39,7 @@ Usage
 * To run the 2d image inpainting experiment, type the following command on the Linux console: ``python main_2d.py``.
 
 See more optional parameter settings (e.g., changing dataset, models) in each main file.
-This script also includes the implementation of (Conditional) Neural processes (<https://github.com/deepmind/neural-processes>) as relative baselines.
+This repository also includes the implementation of (Conditional) Neural processes (<https://github.com/deepmind/neural-processes>) as relative baselines.
 
 To see the results of each experiment, enter into the folder ``./runs/[dataset_name]/[experiment_name]/events/``
 and execute tensorboard with the following command: `tensorboard --logdir=./ --port=8888 --samples_per_plugin image=100 --reload_multifile=True --reload_interval 30 --host=0.0.0.0`
